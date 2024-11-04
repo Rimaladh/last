@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADAMEBELLE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="show">
+    <div class="con" style="position: relative;margin: 10px;">
+            <header>
+                <div class="cartIcon" style="width: 30px;position: relative;" onclick="toggleCart()">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.8-3H7.4M11 7H6.3M17 4v6m-3-3h6"/>
+                    </svg>
+                    <span id="cartTotal" style="display:flex;background-color:red;justify-content: center;align-items: center;color: aliceblue;border-radius: 60%;width: 20px;height: 20px ; top:15px;right: -8px; position: absolute;">0</span>    
+                </div>
+            </header>
+        
+
+        
+                <section class="sub-header">
+                    <nav>
+                        <!-------------<a href="index.html"><img src="images/logo.png" alt="image non dispo"></a>------------->
+                        <div class="nav-links" id="navLinks">
+                            
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="aboutUs.html">ABOUT US</a></li>
+                                
+                            
+                            </ul>
+                        </div>
+                    </nav>
+                       
+                    
+
+                </section> 
+        
+                <section class="main-home">
+                
+                            <button style="color: red;background-color: black;">BEST SELLER</button>
+                            <div class="main-text">
+                                <h5>Winter Collection</h5>
+                                <h1>New winter<br> collection 2024</h1>
+                                <h6>Shop Now <i class='bx bx-down-arrow-alt'></i></h6>
+                            </div>
+                        
+                            <div class="shop-col">
+                                <img src="images/coat.jpg" alt="">
+                            </div>
+                    
+                </section>
+            <!---------trending products------>
+            <section class="trending-products" id="trending">
+                <div class="center-text">
+                    <h1>Our Trending Products</h1>
+                </div>
+                <div class="products">
+                    <div class="row">
+
+                    
+                        <div class="producy-column">
+                            <div class="product-item">
+                                
+                                <div class="product-image" style="position: relative;"> 
+                                    <img src="images/SA.jpg" alt="" id="img1" style="width: 70%; height: 100%;">
+                                    <img  class="hover-image" src="images/hoverr.jpg" id="img2" alt="" style="position: absolute;left: 0;top: 0;">
+                                    
+                                </div>
+                                
+                                <div class="product-text">
+                                    <h5 style="left: 193px;top: 6px; ">SALE</h5>
+                                </div>
+                                <h4 style="font-size: small;"> Long Grey Coat</h4>
+                                <span class="original-price">120  د.ت</span><br>
+                                <span class="discount-price">95  د.ت</span>
+                                <div>
+                                    <button onclick="addToCart('Long Grey Coat', '95  د.ت')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;">add to cart</button>
+                                <br>
+                                </div>
+                               
+                                
+
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="producy-column">
+                            <div class="product-item">
+                                <div class="product-image"> 
+                                    <img src="images/a.jpg" alt="" id="img2"style="width: 86%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="product-text">
+                                    <h5 style="left: 170px; ">NEW</h5>
+                                </div>
+                                <h4 style="font-size: small;">Oversized Sweater</h4>
+                                <p style="font-size: 16px;text-align: center;color: grey;text-decoration: overline;">60  د.ت</p>
+                                <span class="discount-price" style=" color: red;">40 د.ت</span>
+                                <button onclick="addToCart('Oversized Sweater', '60  د.ت')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;">add to cart</button>                             
+                                
+                                
+                            </div>    
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="producy-column">
+                            <div class="product-item">
+                                <div class="product-image"> 
+                                    <img src="images/chh.jpg" alt="" id="img3" style="width: 85%; height: 100%; object-fit: cover;">
+                                </div>
+                                
+                                <h4 style="font-size: small;">Basic Blazer</h4>
+                                <p style="font-size: medium; ">80 د.ت</p>
+                                <button onclick="addToCart('Basic Blazer', '80 د.ت')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;">add to cart</button>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>    
+                        </div>
+                    </div> 
+                    <div class="row">    
+                        <div class="producy-column">
+                            <div class="product-item">
+                                <div class="product-image"> 
+                                    <img src="images/s.jpg" alt="" id="img4" style="width: 82%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="product-text">
+                                    <h5 style="left: 175px;top: 6px; ">SALE</h5>
+                                </div>
+                                <button onclick="addToCart('Sweater', '40 د.ت')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;">add to cart</button>
+                                
+                                <h4 style="font-size: small; text-align: center;">Sweater</h4>
+                                <span class="original-price">70 د.ت</span><br>
+                                <span class="discount-price">40 د.ت</span>
+                                
+                              
+                                
+                            
+                            </div>    
+                        </div>
+                    </div>
+                
+                </div>   
+            </section>
+            <!-------OTHER PRODUCTS-------->
+            <section class="otherproducts" id="other">
+                <h1 class="heading" style="text-align: center;font-size: 40px;"> BROWSE ALL <span>PRODUCTS</span> </h1>
+                <div class="box-container">
+                    <!---prod 1---->
+                    <div class="box" style="width: min-content;" id="1">
+                        <span class="discount" style=" 
+                        margin-left: 20px;
+                        margin-bottom: 10px;
+                        
+                        padding: 0.5rem  0.4rem;
+                        font-size: 1rem;
+                        color: rgb(215, 146, 157);
+                        
+                        z-index: 1;
+                        border-radius: .5rem;"> -10%</span>
+                        <div class="ime">
+                            <img src="images/o.jpg" alt="" style="margin: 20px;padding-top: 9px">
+                            <div class="iconN">
+                                <button onclick="addToCart('spring jacket', '45.9د.ت')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;">add to cart</button>
+                                <h3 style="font-size: 14px;">spring jacket</h3>
+                                <span class="original-price" style=" text-decoration: line-through;color: #888;"> 60 د.ت </span><br>
+                                <span class="discount-price" style="color: red;text-decoration: none;">45.9 د.ت</span>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!----prod 2-->
+                    <div class="box" id="2">
+                        <span class="discount" style="margin-top: 20px;
+                        font-size: 1rem;
+                        color: rgb(215, 146, 157);" > -12%</span>
+                        <div class="ime">
+                            <img src="images/SSS.jpg" alt="" style="margin: 1px; width:90%; padding-top: 27px;padding-right: 50px;">
+                            <div class="iconN" style="margin-left: 50px;">
+                                <button onclick="addToCart('maxi skirt', ' 40د.ت')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;">add to cart</button>                     
+                                <h3 style="font-size:14px;text-align: center;">maxi skirt</h3>
+                                <span class="original-price" style=" text-decoration: line-through;color: #888;text-align: center"> 55 د.ت </span><br>
+                                <span class="discount-price" style="color: red;text-decoration: none;text-align: center">40 د.ت</span>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!----prod 3-->
+                    <div class="box" id="3">
+                        
+                        <div class="ime">
+                            <img src="images/new.jpg" alt="" style="width: 95%;padding-right:90px;padding-top: 50px;">
+                            <div class="iconN">
+                                
+                                <button onclick="addToCart('loose pants', ' 45.9  د.ت ')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;">add to cart</button>
+                            </div>   
+                            
+                        </div>
+                        <div class="c">
+                            <h3 style="font-size: 15px;">loose pants</h3>
+                            <div class="priCE" style="text-align: center;color: #888;"> 45.9 د.ت </div>
+                        </div>
+                    </div>
+                    <!----prod 4-->
+                    <div class="box" id="4">
+                        
+                        <div class="ime" style="padding-top: 30px;">
+                            <img src="images/top.jpg" alt="" style="padding-bottom: 20px; padding-top: 20px;">
+                            <div class="iconN" style="margin-TOP: 5px;">
+                                
+                                <button onclick="addToCart('basic everyday t-shirt', ' 20 د.ت ')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;">add to cart</button>
+                                
+                            </div>
+                        </div>
+                        <div class="c">
+                            <h3  style="font-size: 14px; margin-top: 0.5px;">basic everyday t-shirt</h3>
+                            <div class="priCE" style="text-align: center;color: #888;"> 20 د.ت </div>
+                        </div>
+                    </div>
+                    <!----prod 5-->
+                    <div class="box" id="5">
+                        
+                        <div class="ime" style="right: 90px;text-align: center;">
+                            <img src="images/Z.jpg" alt="" style="width: 40%; margin-right: 0.5px;padding-right: 20%;height: 100%;padding-top: 30px;">
+                            <h4 style="color: red;padding-right: 100px;">SOLD OUT</h4>
+                            <div class="iconN" >
+                                <button onclick="addToCart('V-neck sweater', ' 40 د.ت')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;margin-right:100px ;">add to cart</button>
+                                
+                                <h3 style="padding-right: 100px;font-size :14px;">V-neck sweater</h3>
+                              
+                                <div class="priCE" style="padding-right: 100px;color: #888;"> 40 د.ت </div>
+                              
+                                
+                            </div>
+                        </div>
+                           
+                            
+                    </div>
+                    <!----prod 6-->
+                    
+                    <div class="box" style=" flex-basis: 40%;" id="6">
+                        
+                        <div class="ime" style="right: 420px;padding-top: 30px;">
+                            <img src="images/TREBCH.jpg" alt="" style="width:40%">
+                            <div class="iconN">
+                                <button   onclick="addToCart('Trench Coat', '100')" style="background-color: black;color: aliceblue;padding: 5px 10px;border-radius: 20px;margin-top: 10px;border: none;cursor: pointer;">add to cart</button>
+                                
+                                <h3 style="text-align: center;font-size: 14px;">trench coat</h3>
+                                <div class="priCE" style="color: #888;"> 100 د.ت </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <script>
+                        //click on the icon cart and you can see the shopping list
+                            function toggleCart() {
+                            var cart = document.querySelector('.cartTab');
+                            cart.classList.toggle('show');
+                            }
+                            function addToCart(productName, price) {
+                            // Clone the item template
+                            const newItem = document.querySelector('.item-template');
+                           
+                    
+                            // Set product details
+                            newItem.querySelector('.namee').textContent = productName;
+                            newItem.querySelector('.total.price').textContent = price;
+                    
+                            // Append the new item to the shopping cart
+                            document.querySelector('.ListCart').appendChild(newItem);
+                        }
+                    </script>
+                    
+                </div>
+            </section>
+    </div>    
+    
+    <!----add to cart------>
+    <div id="cartContainer" class="cartTab" style="width: 370px;background-color: #353432;color: #eee; position: fixed;display: grid;grid-template-rows: 70px 1fr 70px;">
+        <h1 style="padding: 20px;margin: 0;font-weight: 400;">Shopping Cart</h1>
+        <div class="ListCart" style="margin-top: 30px;">
+
+            
+    
+            <!-- New item template -->
+            <div class="item-template" style="display: none;">
+                <i class='bx bxl-shopify'></i>
+                <div class="namee"></div>
+                <div class="total price"></div>
+                <div class="quantity">
+                    <span class="minus" onclick="decrementQuantity(this)">-</span>
+                    <span class="quantity-value">1</span>
+                    <span class="max" onclick="incrementQuantity(this)">+</span>
+                </div>
+                <button class="purchase-button" onclick="Pay('file:///C:/Users/rimal/OneDrive/Bureau/stage/payment.html')">Purchase</button>
+                
+            </div>
+        </div>
+        <button class="close-btn" onclick="toggleCart()"><i class='bx bx-arrow-back'></i></button>
+        <div id="totalEventualPrice" style="text-align: center; margin-top: 20px; font-size: 18px;">Total Eventual Price: 0 د.ت</div>
+        
+    </div>
+    </form>  
+    <script>
+       
+        // Calculate and update the total price
+        function updateTotalEventualPrice() {
+        const items = document.querySelectorAll('.item-template .total.price');
+        let totalPrice = 0;
+        items.forEach(item => {
+            const itemPriceText = item.textContent.trim().replace(/[^\d.]/g, '');/*remove all characters from the text content that are not digits or periods*/
+            const itemPrice = parseFloat(itemPriceText);
+            
+            if (!isNaN(itemPrice)) {
+                totalPrice += itemPrice;
+            }
+        });
+        const totalEventualPriceElement = document.getElementById('totalEventualPrice');
+        totalEventualPriceElement.textContent = `Total Eventual Price: ${totalPrice.toFixed(2)} د.ت`;
+        }
+
+
+
+        //add quantity
+        function decrementQuantity(element) {
+        const quantityElement = element.parentElement.querySelector('.quantity-value');
+        let quantity = parseInt(quantityElement.textContent);
+
+        if (quantity > 1) {
+            quantity--;
+            quantityElement.textContent = quantity;
+        } else {
+            // If the quantity is 1, remove the item from the cart   OR  not null
+            const cartItem = element.closest('.item-template'); //closest to find the item-template
+            cartItem.remove();
+            // Update the total quantity and cart icon
+            updateTotalQuantity();
+            updateTotalEventualPrice();
+        }
+    }
+
+
+
+    //make it more
+    function incrementQuantity(element) {
+        const quantityElement = element.parentElement.querySelector('.quantity-value');
+        let quantity = parseInt(quantityElement.textContent);
+
+        quantity++;
+        quantityElement.textContent = quantity;
+
+        // Update the total quantity and cart icon
+        updateTotalQuantity();
+        updateTotalEventualPrice();
+    }
+
+
+    /* add the product to the cart list */
+    function addToCart(productName, price) {
+    // Clone the item template
+    const newItem = document.querySelector('.item-template').cloneNode(true);
+    newItem.style.display = 'grid';
+    newItem.querySelector('.namee').textContent = productName;
+    newItem.querySelector('.total.price').textContent = price;
+
+    // Append the new item to the shopping cart
+    document.querySelector('.ListCart').appendChild(newItem);
+
+    // Increment the total quantity and update the cart icon
+    updateTotalQuantity();
+    updateTotalEventualPrice();
+    }
+
+    //the cart icon changes number 
+    function updateTotalQuantity() {
+    const totalQuantityElementHeader = document.getElementById('cartTotal');
+
+
+    
+    // Calculate and update the total quantity
+    const items = document.querySelectorAll('.item-template .quantity-value');
+    let totalQuantity = -1;
+
+    items.forEach(item => {
+        totalQuantity += parseInt(item.textContent);
+    });
+
+    totalQuantityElementHeader.textContent = totalQuantity;
+}
+
+function Pay(url) {
+    // Redirect to the specified URL
+    window.location.href = url;
+   
+}
+    
+</script>
+<script src="script.js"></script>
+   
+        <script>
+            var navLinks=document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px" ;
+            }
+        </script>
+
+   
+
+    
+</body>
+</html>

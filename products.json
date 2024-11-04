@@ -1,0 +1,40 @@
+[
+    {
+        "id":1,
+        "name":"spring jacket",
+        "price":45.9,
+        "image":"images/o.jpg" 
+    },
+
+    {
+        "id":2,
+        "name":"maxi skirt",
+        "price":40,
+        "image":"images/SSS.jpg" 
+    },
+    {
+        "id":3,
+        "name":"loose pants",
+        "price":45.9,
+        "image":"images/new.jpg" 
+    },
+    {
+        "id":4,
+        "name":"basic everyday t-shirt",
+        "price":20,
+        "image":"images/top.jpg" 
+    },
+    {
+        "id":5,
+        "name":"V-neck sweater",
+        "price":40,
+        "image":"images/Z.jpg" 
+    },
+    {
+        "id":6,
+        "name":"trench coat",
+        "price": 100,
+        "image":"images/TREBCH.jpg" 
+    }
+
+]
